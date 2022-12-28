@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # HTTP RESPONSE
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html', context={'name': 'Jonatas Pedro'})
 
 def sobre(request):
     return HttpResponse('<h1>Sobre - Hello Django</h1>')
