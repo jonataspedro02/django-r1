@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
-{% include 'recipes/partials/head.html' %}
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Recipes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+    }
+    html {
+font-size: 62.5%;
+    }
+    body {
+font-size: 1.6rem;
+    }
+</style>
+</head>
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class="fa-solid fa-burger"></i>HOME
-            </h1>
-            <h2><span>{{ name }} Bem - vindo</span></h2>
-                </a>
+    {% include 'recipes/partials/head.html' %}
+    {% include 'recipes/partials/search.html' %}
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
+            <div class="temp"></div>
         </div>
-    </header>
+    </main>
 </body>
 </html>
