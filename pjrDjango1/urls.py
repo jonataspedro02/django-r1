@@ -1,4 +1,4 @@
-"""prjDjango1 URL Configuration
+"""pjrDjango1 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# from django.http import HttpResponse
+
+from recipes.views import home, sobre, contato
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('recipes.urls')),
+    # path('', include('base_template.urls')),
+    # path('', home),
+    # path('sobre/', sobre),
+    # path('contato/', contato),
 ]
