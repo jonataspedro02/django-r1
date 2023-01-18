@@ -13,6 +13,10 @@ from django.http import HttpResponse
 def home(request):
     return render(request,'recipes/pages/home.html', context={'name': 'Jonatas Pedro'})
 
+
+def novo(request):
+    return render(request,'recipes/pages/novo.html', context={'name': 'Jonatas Pedro'})
+
 # def home(request):
 #     return render(request,'recipes/pages/home.html')
 
