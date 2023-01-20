@@ -1,7 +1,7 @@
-"""pjrDjango1 URL Configuration
+"""prjDjango1 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+    https://docs.djangoproject.com/en/4.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -17,12 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 # from django.http import HttpResponse
 
-from recipes.views import home, sobre, contato
+# def my_view(request):
+#     return HttpResponse('Hello Django')
+
+# from recipes.views import home, sobre, contato
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('recipes.urls')),
-    # path('', include('base_template.urls')),
+    path('',include('recipes.urls'))
     # path('', home),
     # path('sobre/', sobre),
     # path('contato/', contato),
