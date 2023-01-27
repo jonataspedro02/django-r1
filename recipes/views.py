@@ -11,8 +11,8 @@ def home(request):
 def sobre(request):
     return render(request,'sobre.html')
 
-def contato(request):
-    return render(request,'contato.html')
+def contatos(request):
+  return render(request, 'recipes/pages/contatos.html', context={'name': 'Jonatas Pedro'})
 
 def receitas(request):
     return render(request, 'recipes/pages/receitas.html', context={'name': 'Jonatas Pedro'})

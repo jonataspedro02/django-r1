@@ -23,7 +23,7 @@ from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
-from recipes.views import home, sobre, contato
+from recipes.views import contatos, home, sobre, contatos
 
 
 def my_view(request):
@@ -36,7 +36,7 @@ urlpatterns = [
     path('home/', home),
     path('sobre0/', my_view),
     path('sobre01/', sobre),
-    path('contato0/', contato),
+    path('contatos/', contatos),
    
 
 ]
