@@ -5,8 +5,8 @@ from django.http import HttpResponse
 # Create your views here
 # HTTP RESPONSE
 
-def index(request):
-    return render(request, 'recipes/pages/index.html', context={'name': 'Shelbys'})
+def home(request):
+    return render(request, 'recipes/pages/home.html', context={'name': 'Shelbys'})
 
 def sobre(request):
     return render(request,'sobre.html')
