@@ -26,7 +26,7 @@ SECRET_KEY = '69tF1fXlF7WXrA2BvLbaF03jjQPDanQZGv8v7bMfsodaodyc2H41vw8zJf7i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://zealous-river-027bf9610.2.azurestaticapps.net']
+ALLOWED_HOSTS = ['https://shelbysfood.azurewebsites.net']
 
 
 # Application definition
