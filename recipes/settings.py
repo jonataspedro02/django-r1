@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '69tF1fXlF7WXrA2BvLbaF03jjQPDanQZGv8v7bMfsodaodyc2H41vw8zJf7i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS =  ['http://shelbysfood.azurewebsites.net/' , 'localhost', '127.0.0.1']
+ALLOWED_HOSTS =  ['localhost' , 'http://shelbysfood.azurewebsites.net/', 'shelbysfood.azurewebsites.net']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hello_azure'
+    'recipes',
 ]
 
 MIDDLEWARE = [
@@ -51,12 +51,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'quickstartproject.urls'
+ROOT_URLCONF = 'prjDjango1.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/'base_templates',
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'quickstartproject.wsgi.application'
+WSGI_APPLICATION = 'prjDjango1.wsgi.application'
 
 
 # Database
